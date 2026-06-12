@@ -1,0 +1,1222 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>1st NAIL & eyelash</title>
+  <meta name="description" content="時短で叶う、洗練された美しさ。上質なネイルとまつげを同じトンマナで展開したLP。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,400;1,500&family=Noto+Serif+JP:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --cream: #f7f3ec;
+      --ivory: #fffdf8;
+      --sand: #ece4d8;
+      --linen: #ddd2c5;
+      --taupe: #91877c;
+      --deep: #56514b;
+      --muted: #7c756d;
+      --gold: #b9a372;
+      --gold-dark: #a58d61;
+      --rose: #c7aaa2;
+      --white-soft: rgba(255, 253, 248, 0.88);
+      --shadow: 0 20px 55px rgba(96, 83, 68, 0.13);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--deep);
+      background: var(--sand);
+      font-family: "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", "YuMincho", serif;
+      font-weight: 400;
+      letter-spacing: 0;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .lp {
+      width: min(100%, 1120px);
+      margin: 0 auto;
+      background: var(--cream);
+      box-shadow: 0 0 50px rgba(84, 70, 55, 0.1);
+      overflow: hidden;
+    }
+
+    .section {
+      padding: clamp(64px, 9vw, 116px) clamp(22px, 5vw, 76px);
+      position: relative;
+    }
+
+    .section__inner {
+      width: min(100%, 980px);
+      margin: 0 auto;
+    }
+
+    .kicker {
+      color: var(--gold-dark);
+      font-size: 0.84rem;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      margin: 0 0 18px;
+      text-transform: uppercase;
+    }
+
+    .script {
+      color: var(--gold);
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-style: italic;
+      font-weight: 400;
+      letter-spacing: 0.06em;
+    }
+
+    .section-title {
+      margin: 0;
+      font-size: clamp(1.9rem, 4.5vw, 3.2rem);
+      font-weight: 400;
+      line-height: 1.58;
+      letter-spacing: 0.08em;
+    }
+
+    .section-copy {
+      margin: 28px 0 0;
+      color: var(--muted);
+      font-size: clamp(0.95rem, 2vw, 1.05rem);
+      line-height: 2.15;
+      letter-spacing: 0.08em;
+    }
+
+    .jp-copy,
+    .section-title,
+    .hero h1,
+    summary {
+      line-break: strict;
+      overflow-wrap: normal;
+      text-wrap: pretty;
+      word-break: auto-phrase;
+    }
+
+    .line,
+    .copy-line,
+    .phrase,
+    .no-break {
+      display: inline-block;
+      max-width: 100%;
+    }
+
+    .line,
+    .no-break {
+      white-space: nowrap;
+    }
+
+    .copy-line {
+      display: block;
+    }
+
+    .rule {
+      display: block;
+      width: 108px;
+      height: 1px;
+      margin: 34px 0 0;
+      background: linear-gradient(90deg, var(--gold), rgba(185, 163, 114, 0));
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 54px;
+      padding: 0 34px;
+      border: 1px solid rgba(255, 253, 248, 0.78);
+      border-radius: 999px;
+      color: #fffdf8;
+      background: linear-gradient(135deg, #c3ad7b, #a78f63);
+      box-shadow: 0 15px 35px rgba(150, 125, 84, 0.22);
+      font-size: 1rem;
+      font-weight: 400;
+      letter-spacing: 0.14em;
+      transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
+    }
+
+    .btn::after {
+      content: "";
+      width: 8px;
+      height: 8px;
+      margin-left: 22px;
+      border-top: 1px solid currentColor;
+      border-right: 1px solid currentColor;
+      transform: rotate(45deg);
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 18px 42px rgba(150, 125, 84, 0.3);
+      background: linear-gradient(135deg, #cbb785, #ad9366);
+    }
+
+    .hero {
+      min-height: clamp(640px, 58vw, 760px);
+      display: grid;
+      grid-template-columns: minmax(470px, 0.96fr) minmax(500px, 1.04fr);
+      background:
+        radial-gradient(circle at 26% 25%, rgba(255, 255, 255, 0.78), rgba(255, 255, 255, 0) 34%),
+        linear-gradient(90deg, #f6f1e9 0%, #f6f1e9 42%, rgba(246, 241, 233, 0.62) 56%, rgba(246, 241, 233, 0) 100%);
+      position: relative;
+    }
+
+    .hero__content {
+      z-index: 2;
+      padding: clamp(42px, 7vw, 78px) 0 clamp(56px, 7vw, 86px) clamp(24px, 6vw, 74px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .brand {
+      margin: 0 0 clamp(40px, 6vw, 70px);
+    }
+
+    .brand__name {
+      display: block;
+      color: var(--gold);
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: clamp(4rem, 9vw, 6.8rem);
+      font-style: italic;
+      font-weight: 400;
+      line-height: 0.7;
+      letter-spacing: 0.03em;
+    }
+
+    .brand__sub {
+      display: block;
+      margin-top: 14px;
+      color: #706a63;
+      font-size: clamp(1rem, 2vw, 1.35rem);
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+    }
+
+    .hero__lead {
+      margin: 0 0 28px;
+      color: var(--deep);
+      font-size: clamp(1rem, 2vw, 1.25rem);
+      line-height: 2.1;
+      letter-spacing: 0.12em;
+    }
+
+    .hero h1 {
+      margin: 0;
+      font-size: clamp(2.25rem, 3.35vw, 3.75rem);
+      font-weight: 400;
+      line-height: 1.5;
+      letter-spacing: 0.08em;
+    }
+
+    .hero h1 span {
+      white-space: nowrap;
+    }
+
+    .hero-badge {
+      display: none;
+    }
+
+    .hero-badge .script {
+      display: block;
+      color: rgba(255, 253, 248, 0.9);
+      font-size: clamp(1.55rem, 5vw, 2rem);
+      line-height: 1;
+    }
+
+    .hero-badge span:not(.script) {
+      display: block;
+      margin-top: 12px;
+      color: var(--ivory);
+      font-size: clamp(0.78rem, 2.7vw, 0.95rem);
+      line-height: 1.85;
+      letter-spacing: 0.08em;
+    }
+
+    .hero__copy {
+      max-width: 420px;
+      margin: 32px 0 0;
+      color: var(--deep);
+      font-size: clamp(0.9rem, 1.7vw, 1rem);
+      line-height: 2.15;
+      letter-spacing: 0.09em;
+    }
+
+    .hero__media {
+      min-height: 100%;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero__media::before {
+      content: "";
+      position: absolute;
+      inset: 0 auto 0 -28%;
+      z-index: 1;
+      width: 42%;
+      background: linear-gradient(90deg, #f6f1e9 0%, rgba(246, 241, 233, 0.82) 45%, rgba(246, 241, 233, 0) 100%);
+      pointer-events: none;
+    }
+
+    .hero__media img {
+      width: 100%;
+      height: 100%;
+      min-height: clamp(640px, 58vw, 760px);
+      object-fit: cover;
+      object-position: center top;
+      filter: saturate(0.94) contrast(0.98);
+    }
+
+    .problem {
+      background:
+        linear-gradient(180deg, rgba(255, 253, 248, 0.56), rgba(255, 253, 248, 0)),
+        var(--cream);
+      text-align: center;
+    }
+
+    .problem .rule {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .problem-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      margin-top: 52px;
+      background: rgba(185, 163, 114, 0.2);
+    }
+
+    .problem-card {
+      min-height: 230px;
+      padding: 42px 26px;
+      background: rgba(255, 253, 248, 0.64);
+    }
+
+    .line-icon {
+      width: 70px;
+      height: 70px;
+      margin: 0 auto 24px;
+      color: var(--gold);
+    }
+
+    .problem-card h3,
+    .feature h3,
+    .price-card h3 {
+      margin: 0;
+      color: var(--gold-dark);
+      font-size: clamp(1.1rem, 2vw, 1.34rem);
+      font-weight: 400;
+      line-height: 1.6;
+      letter-spacing: 0.12em;
+    }
+
+    .problem-card p,
+    .feature p,
+    .price-card p {
+      margin: 14px 0 0;
+      color: var(--deep);
+      font-size: 0.95rem;
+      line-height: 1.95;
+      letter-spacing: 0.07em;
+    }
+
+    .solution {
+      padding: 0;
+      background: var(--ivory);
+    }
+
+    .quality {
+      min-height: 410px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .quality::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 2;
+      height: 5px;
+      background: rgba(255, 253, 248, 0.92);
+      transform: rotate(-1deg) scaleX(1.02);
+      transform-origin: center;
+    }
+
+    .quality__photo {
+      min-height: 410px;
+      background-size: cover;
+      background-position: center;
+      filter: saturate(0.92);
+    }
+
+    .quality__photo--nail {
+      background-image: url("assets/nail.jpg");
+    }
+
+    .quality__photo--eye {
+      background-image: url("assets/eyelash.jpg");
+    }
+
+    .quality__panel {
+      position: absolute;
+      inset: 50% auto auto 50%;
+      z-index: 3;
+      width: min(420px, calc(100% - 44px));
+      padding: clamp(30px, 4vw, 44px);
+      color: var(--ivory);
+      background: rgba(102, 94, 86, 0.58);
+      backdrop-filter: blur(7px);
+      transform: translate(-50%, -50%);
+      text-align: center;
+      box-shadow: var(--shadow);
+    }
+
+    .quality__panel .script {
+      display: block;
+      margin-bottom: 12px;
+      color: rgba(255, 253, 248, 0.78);
+      font-size: 1.7rem;
+    }
+
+    .quality__panel h2 {
+      margin: 0;
+      font-size: clamp(1.35rem, 3vw, 2rem);
+      font-weight: 400;
+      line-height: 1.7;
+      letter-spacing: 0.12em;
+    }
+
+    .quality__panel .rule {
+      margin: 24px auto 0;
+      background: rgba(255, 253, 248, 0.62);
+    }
+
+    .quality__panel p {
+      margin: 24px 0 0;
+      font-size: 1rem;
+      line-height: 2;
+      letter-spacing: 0.1em;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: rgba(185, 163, 114, 0.18);
+    }
+
+    .feature {
+      min-height: 250px;
+      padding: 44px 28px;
+      background: var(--ivory);
+      text-align: center;
+    }
+
+    .results {
+      background:
+        linear-gradient(90deg, rgba(255, 253, 248, 0.88), rgba(255, 253, 248, 0.32)),
+        var(--sand);
+    }
+
+    .results-layout {
+      display: grid;
+      grid-template-columns: minmax(280px, 0.95fr) minmax(300px, 1.05fr);
+      gap: clamp(34px, 6vw, 72px);
+      align-items: center;
+    }
+
+    .salon-photo {
+      position: relative;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+
+    .salon-photo img {
+      aspect-ratio: 1.18 / 1;
+      object-fit: cover;
+      filter: saturate(0.92) brightness(1.03);
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      margin-top: 38px;
+      background: rgba(185, 163, 114, 0.24);
+    }
+
+    .stat {
+      padding: 24px 16px;
+      background: rgba(255, 253, 248, 0.72);
+      text-align: center;
+    }
+
+    .stat strong {
+      display: block;
+      color: var(--gold-dark);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(2rem, 4vw, 3.1rem);
+      font-weight: 400;
+      line-height: 1;
+    }
+
+    .stat span {
+      display: block;
+      margin-top: 12px;
+      color: var(--deep);
+      font-size: 0.86rem;
+      line-height: 1.6;
+      letter-spacing: 0.09em;
+    }
+
+    .price {
+      background: var(--cream);
+    }
+
+    .price-offer {
+      display: grid;
+      grid-template-columns: minmax(230px, 0.8fr) minmax(310px, 1.2fr);
+      gap: clamp(24px, 5vw, 48px);
+      align-items: stretch;
+      margin-top: 48px;
+    }
+
+    .coupon {
+      min-height: 310px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 38px;
+      background:
+        linear-gradient(rgba(255, 253, 248, 0.45), rgba(255, 253, 248, 0.45)),
+        url("assets/salon.jpg") center / cover;
+      color: var(--deep);
+      box-shadow: var(--shadow);
+    }
+
+    .coupon .script {
+      color: rgba(185, 163, 114, 0.74);
+      font-size: 3rem;
+    }
+
+    .coupon p {
+      max-width: 260px;
+      margin: 20px 0 0;
+      font-size: 1rem;
+      line-height: 2;
+      letter-spacing: 0.1em;
+    }
+
+    .offer-box {
+      padding: clamp(34px, 5vw, 54px);
+      background: rgba(255, 253, 248, 0.74);
+      border: 1px solid rgba(185, 163, 114, 0.2);
+      text-align: center;
+    }
+
+    .ribbon {
+      display: inline-block;
+      min-width: 240px;
+      padding: 10px 26px;
+      color: var(--ivory);
+      background: var(--taupe);
+      font-size: 1rem;
+      letter-spacing: 0.12em;
+      clip-path: polygon(8% 0, 92% 0, 100% 50%, 92% 100%, 8% 100%, 0 50%);
+    }
+
+    .offer-box p {
+      margin: 26px 0 10px;
+      color: var(--deep);
+      font-size: 1.08rem;
+      letter-spacing: 0.16em;
+    }
+
+    .discount {
+      display: flex;
+      align-items: baseline;
+      justify-content: center;
+      gap: 12px;
+      color: var(--gold);
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1;
+    }
+
+    .discount strong {
+      font-size: clamp(5rem, 12vw, 8rem);
+      font-weight: 400;
+    }
+
+    .discount span {
+      font-size: clamp(2rem, 5vw, 3.6rem);
+    }
+
+    .offer-note {
+      display: inline-flex;
+      justify-content: center;
+      margin-top: 30px;
+      padding: 10px 24px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.82);
+      color: var(--deep);
+      font-size: 0.92rem;
+      letter-spacing: 0.08em;
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-top: 22px;
+    }
+
+    .price-card {
+      padding: 30px 24px;
+      background: rgba(255, 253, 248, 0.68);
+      border: 1px solid rgba(185, 163, 114, 0.2);
+    }
+
+    .price-card dl {
+      margin: 20px 0 0;
+    }
+
+    .price-card div {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 13px 0;
+      border-top: 1px solid rgba(185, 163, 114, 0.18);
+      color: var(--deep);
+      font-size: 0.92rem;
+      line-height: 1.5;
+    }
+
+    .price-card dd,
+    .price-card dt {
+      margin: 0;
+    }
+
+    .price-card dd {
+      color: var(--gold-dark);
+      white-space: nowrap;
+    }
+
+    .faq {
+      background:
+        radial-gradient(circle at 88% 12%, rgba(199, 170, 162, 0.2), rgba(199, 170, 162, 0) 28%),
+        var(--ivory);
+    }
+
+    .faq-list {
+      margin-top: 44px;
+      border-top: 1px solid rgba(185, 163, 114, 0.26);
+    }
+
+    details {
+      border-bottom: 1px solid rgba(185, 163, 114, 0.26);
+      background: rgba(255, 253, 248, 0.45);
+    }
+
+    summary {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 26px 8px;
+      color: var(--deep);
+      cursor: pointer;
+      font-size: 1.02rem;
+      font-weight: 400;
+      line-height: 1.75;
+      letter-spacing: 0.08em;
+      list-style: none;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    summary::after {
+      content: "";
+      flex: 0 0 auto;
+      width: 11px;
+      height: 11px;
+      border-right: 1px solid var(--gold-dark);
+      border-bottom: 1px solid var(--gold-dark);
+      transform: rotate(45deg);
+      transition: transform 160ms ease;
+    }
+
+    .summary-text {
+      display: block;
+      min-width: 0;
+    }
+
+    details[open] summary::after {
+      transform: rotate(225deg);
+    }
+
+    details p {
+      margin: 0;
+      padding: 0 8px 28px;
+      color: var(--muted);
+      font-size: 0.96rem;
+      line-height: 2.05;
+      letter-spacing: 0.06em;
+    }
+
+    .cta {
+      padding-bottom: clamp(100px, 12vw, 132px);
+      background:
+        linear-gradient(rgba(86, 81, 75, 0.68), rgba(86, 81, 75, 0.68)),
+        url("assets/hero-portrait.jpg") center / cover;
+      color: var(--ivory);
+      text-align: center;
+    }
+
+    .cta .kicker,
+    .cta .script {
+      color: rgba(255, 253, 248, 0.78);
+    }
+
+    .cta .section-copy {
+      color: rgba(255, 253, 248, 0.86);
+    }
+
+    .cta .rule {
+      margin-left: auto;
+      margin-right: auto;
+      background: rgba(255, 253, 248, 0.66);
+    }
+
+    .cta-actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px;
+      margin-top: 38px;
+    }
+
+    .btn--ghost {
+      color: var(--ivory);
+      background: rgba(255, 253, 248, 0.08);
+      border-color: rgba(255, 253, 248, 0.7);
+      box-shadow: none;
+    }
+
+    .btn--ghost:hover {
+      background: rgba(255, 253, 248, 0.16);
+      box-shadow: none;
+    }
+
+    .sticky-cta {
+      position: sticky;
+      bottom: 0;
+      z-index: 20;
+      display: grid;
+      grid-template-columns: auto minmax(220px, 520px);
+      gap: clamp(18px, 4vw, 32px);
+      align-items: center;
+      justify-content: center;
+      padding: 18px 22px;
+      color: var(--ivory);
+      background: rgba(131, 121, 111, 0.96);
+      backdrop-filter: blur(8px);
+    }
+
+    .quick {
+      display: grid;
+      place-items: center;
+      width: 92px;
+      height: 92px;
+      border: 1px solid rgba(255, 253, 248, 0.8);
+      border-radius: 50%;
+      font-size: 1.18rem;
+      line-height: 1.2;
+      letter-spacing: 0.08em;
+      text-align: center;
+    }
+
+    .quick strong {
+      display: block;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 2rem;
+      font-weight: 400;
+      letter-spacing: 0;
+    }
+
+    .sticky-cta__main {
+      display: grid;
+      gap: 12px;
+      text-align: center;
+    }
+
+    .sticky-cta__text {
+      font-size: clamp(1rem, 3vw, 1.35rem);
+      letter-spacing: 0.12em;
+    }
+
+    .sticky-cta .btn {
+      width: 100%;
+      min-height: 50px;
+      box-shadow: none;
+    }
+
+    @media (max-width: 900px) {
+      .hero {
+        grid-template-columns: 1fr;
+        min-height: auto;
+      }
+
+      .hero__content {
+        min-height: 650px;
+        padding-right: clamp(22px, 5vw, 54px);
+        background:
+          linear-gradient(90deg, rgba(246, 241, 233, 0.96) 0%, rgba(246, 241, 233, 0.86) 30%, rgba(246, 241, 233, 0.28) 52%, rgba(246, 241, 233, 0.02) 74%, rgba(246, 241, 233, 0) 100%),
+          url("assets/hero-portrait.jpg") right top / auto 100% no-repeat;
+      }
+
+      .hero-badge {
+        display: none;
+      }
+
+      .hero__media {
+        display: none;
+      }
+
+      .hero h1 {
+        max-width: 10.5em;
+      }
+
+      .hero__copy {
+        max-width: 28em;
+      }
+
+      .problem-grid,
+      .features,
+      .menu-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .quality {
+        min-height: 620px;
+        grid-template-columns: 1fr;
+      }
+
+      .quality__photo {
+        min-height: 310px;
+      }
+
+      .results-layout,
+      .price-offer {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .section {
+        padding-left: 22px;
+        padding-right: 22px;
+      }
+
+      .brand {
+        margin-bottom: 42px;
+      }
+
+      .hero__content {
+        min-height: 620px;
+        padding-left: 22px;
+        background:
+          linear-gradient(90deg, rgba(246, 241, 233, 0.97) 0%, rgba(246, 241, 233, 0.88) 32%, rgba(246, 241, 233, 0.2) 54%, rgba(246, 241, 233, 0.02) 72%, rgba(246, 241, 233, 0) 100%),
+          url("assets/hero-portrait.jpg") right top / auto 100% no-repeat;
+      }
+
+      .hero__lead {
+        font-size: 0.98rem;
+      }
+
+      .hero h1 {
+        font-size: clamp(2.08rem, 8vw, 3rem);
+      }
+
+      .hero__copy {
+        max-width: 13em;
+        font-size: 0.86rem;
+      }
+
+      .hero-badge {
+        display: none;
+      }
+
+      .section-title {
+        font-size: clamp(1.65rem, 6.8vw, 2rem);
+        letter-spacing: 0.04em;
+      }
+
+      .quality__panel {
+        padding: 28px 20px;
+      }
+
+      .stats {
+        grid-template-columns: 1fr;
+      }
+
+      .offer-box {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      .price-offer > *,
+      .coupon,
+      .offer-box {
+        min-width: 0;
+      }
+
+      .coupon {
+        padding: 28px 20px;
+      }
+
+      .ribbon {
+        min-width: 210px;
+      }
+
+      .offer-note {
+        width: 100%;
+        padding-left: 12px;
+        padding-right: 12px;
+      }
+
+      .sticky-cta {
+        grid-template-columns: 76px minmax(0, 1fr);
+        gap: 14px;
+        padding: 14px 14px;
+      }
+
+      .quick {
+        width: 76px;
+        height: 76px;
+        font-size: 0.94rem;
+      }
+
+      .quick strong {
+        font-size: 1.65rem;
+      }
+
+      .sticky-cta__text {
+        font-size: 1rem;
+      }
+
+      .sticky-cta .btn {
+        min-height: 46px;
+        padding: 0 18px;
+        font-size: 0.92rem;
+      }
+    }
+
+    @media (max-width: 360px) {
+      .hero__content {
+        background:
+          linear-gradient(90deg, rgba(246, 241, 233, 0.97) 0%, rgba(246, 241, 233, 0.9) 48%, rgba(246, 241, 233, 0.36) 70%, rgba(246, 241, 233, 0.04) 88%, rgba(246, 241, 233, 0) 100%),
+          url("assets/hero-clean.jpg") right -108px top / auto 100% no-repeat;
+      }
+
+      .hero__copy {
+        max-width: 14.5em;
+      }
+
+      .hero-badge {
+        position: absolute;
+        right: 8px;
+        bottom: 68px;
+        z-index: 3;
+        display: grid;
+        place-items: center;
+        width: 96px;
+        aspect-ratio: 1;
+        border: 1px solid rgba(255, 253, 248, 0.52);
+        border-radius: 50%;
+        background: rgba(174, 151, 101, 0.82);
+        box-shadow: 0 18px 38px rgba(92, 72, 46, 0.16);
+        text-align: center;
+        pointer-events: none;
+      }
+
+      .hero-badge .script {
+        font-size: 1.35rem;
+      }
+
+      .hero-badge span:not(.script) {
+        margin-top: 8px;
+        font-size: 0.68rem;
+        line-height: 1.7;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="lp">
+    <section class="hero" id="fv" aria-label="ファーストビュー">
+      <div class="hero__content">
+        <p class="brand">
+          <span class="brand__name">1st</span>
+          <span class="brand__sub">NAIL &amp; eyelash</span>
+        </p>
+        <p class="hero__lead jp-copy"><span class="copy-line">わたしを高める、</span><span class="copy-line">上質なネイルとまつげ。</span></p>
+        <h1><span class="line">時短で叶う、</span><br /><span class="line">洗練された</span><span class="line">美しさ。</span></h1>
+        <span class="rule" aria-hidden="true"></span>
+        <p class="hero__copy jp-copy">
+          <span class="copy-line"><span class="phrase">忙しい毎日でも、</span><span class="phrase">妥協しない。</span></span>
+          <span class="copy-line"><span class="phrase">トレンドを取り入れた</span><span class="phrase">デザインと、</span></span>
+          <span class="copy-line"><span class="phrase">高い技術で</span><span class="phrase">魅力を引き出します。</span></span>
+        </p>
+      </div>
+      <div class="hero__media" aria-hidden="true">
+        <img src="assets/hero-portrait.jpg" alt="" />
+      </div>
+      <div class="hero-badge" aria-hidden="true">
+        <div>
+          <span class="script">Create</span>
+          <span>理想のわたしを<br />もっと身近に。</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section problem" id="problem">
+      <div class="section__inner">
+        <p class="kicker">Problem</p>
+        <h2 class="section-title"><span class="line">忙しい毎日ほど、</span><br /><span class="line">美しさは後回しに</span><br /><span class="line">なりやすい。</span></h2>
+        <span class="rule" aria-hidden="true"></span>
+        <p class="section-copy jp-copy">
+          <span class="phrase">予定の合間に通いたい。</span><span class="phrase">仕上がりの質も、</span><span class="phrase">サロンで過ごす時間も大切にしたい。</span><span class="phrase">そんな大人の女性に寄り添うため、</span><span class="phrase">短時間でも満足感のある</span><span class="phrase">施術設計にこだわりました。</span>
+        </p>
+
+        <div class="problem-grid" aria-label="よくある課題">
+          <article class="problem-card">
+            <svg class="line-icon" viewBox="0 0 80 80" aria-hidden="true">
+              <circle cx="40" cy="40" r="29" fill="none" stroke="currentColor" stroke-width="1.4" />
+              <path d="M40 20v22l14 8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" />
+              <path d="M57 17c10 8 14 22 9 35" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-dasharray="3 5" />
+            </svg>
+            <h3>時間が足りない</h3>
+            <p class="jp-copy"><span class="phrase">仕事や家事の合間でも通いやすい、</span><span class="phrase">無駄のない施術導線。</span></p>
+          </article>
+          <article class="problem-card">
+            <svg class="line-icon" viewBox="0 0 80 80" aria-hidden="true">
+              <path d="M16 34h48L49 61H31L16 34Z" fill="none" stroke="currentColor" stroke-width="1.4" />
+              <path d="M25 34l9-16h12l9 16M34 18l-4 16M46 18l4 16M28 46h24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" />
+              <path d="M59 17l2 5 5 2-5 2-2 5-2-5-5-2 5-2 2-5Z" fill="none" stroke="currentColor" stroke-width="1.2" />
+            </svg>
+            <h3>上品さが欲しい</h3>
+            <p class="jp-copy"><span class="phrase">派手すぎず、でも印象に残る。</span><span class="phrase">肌なじみの良いデザイン。</span></p>
+          </article>
+          <article class="problem-card">
+            <svg class="line-icon" viewBox="0 0 80 80" aria-hidden="true">
+              <path d="M23 49c0-11 7-19 17-19s17 8 17 19v8H23v-8Z" fill="none" stroke="currentColor" stroke-width="1.4" />
+              <path d="M17 57h46M25 30c0-6 4-10 9-10h12c5 0 9 4 9 10M30 57v7M50 57v7" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" />
+            </svg>
+            <h3>落ち着ける空間</h3>
+            <p class="jp-copy"><span class="phrase">慌ただしい日常から離れて、</span><span class="phrase">静かに整うひとときを。</span></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="solution" id="solution">
+      <div class="quality">
+        <div class="quality__photo quality__photo--nail" aria-hidden="true"></div>
+        <div class="quality__photo quality__photo--eye" aria-hidden="true"></div>
+        <div class="quality__panel">
+          <span class="script">High quality</span>
+          <h2>ネイルもまつげも<br />上質な仕上がりを。</h2>
+          <span class="rule" aria-hidden="true"></span>
+          <p class="jp-copy"><span class="phrase">細部までこだわる技術で、</span><span class="phrase">モチの良さと美しさを実現。</span></p>
+        </div>
+      </div>
+      <div class="features" aria-label="解決策">
+        <article class="feature">
+          <svg class="line-icon" viewBox="0 0 80 80" aria-hidden="true">
+            <circle cx="40" cy="40" r="28" fill="none" stroke="currentColor" stroke-width="1.4" />
+            <path d="M40 21v20M40 41l-10 10M58 22c8 9 10 23 4 35" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-dasharray="4 5" />
+          </svg>
+          <h3>時短でキレイ</h3>
+          <p class="jp-copy"><span class="phrase">忙しい毎日でも通いやすい</span><span class="phrase">スピーディーな施術。</span></p>
+        </article>
+        <article class="feature">
+          <svg class="line-icon" viewBox="0 0 80 80" aria-hidden="true">
+            <path d="M15 32h50L50 61H30L15 32Z" fill="none" stroke="currentColor" stroke-width="1.4" />
+            <path d="M26 32l10-15h8l10 15M28 44h24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" />
+            <path d="M58 12l2 5 5 2-5 2-2 5-2-5-5-2 5-2 2-5Z" fill="none" stroke="currentColor" stroke-width="1.2" />
+          </svg>
+          <h3>上質な仕上がり</h3>
+          <p class="jp-copy"><span class="phrase">トレンドと似合わせで、</span><span class="phrase">あなたに合う美しさを。</span></p>
+        </article>
+        <article class="feature">
+          <svg class="line-icon" viewBox="0 0 80 80" aria-hidden="true">
+            <path d="M22 49c0-11 7-19 18-19s18 8 18 19v8H22v-8Z" fill="none" stroke="currentColor" stroke-width="1.4" />
+            <path d="M18 57h44M25 30c0-6 4-10 9-10h12c5 0 9 4 9 10M29 57v7M51 57v7" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" />
+          </svg>
+          <h3>くつろぎの空間</h3>
+          <p class="jp-copy"><span class="phrase">上質で落ち着いた空間で、</span><span class="phrase">リラックスしたひとときを。</span></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section results" id="results">
+      <div class="section__inner results-layout">
+        <div class="salon-photo">
+          <img src="assets/salon.jpg" alt="白を基調にした落ち着いたサロン空間" />
+        </div>
+        <div>
+          <p class="kicker">Results</p>
+          <h2 class="section-title"><span class="line">丁寧な</span><span class="line">カウンセリングで、</span><br /><span class="line">仕上がりの満足を</span><span class="line">重ねる。</span></h2>
+          <span class="rule" aria-hidden="true"></span>
+          <p class="section-copy jp-copy">
+            <span class="phrase">デザインの好み、</span><span class="phrase">ライフスタイル、</span><span class="phrase">目元や爪の状態を見極めながら、</span><span class="phrase">一人ひとりに似合うバランスを</span><span class="phrase">ご提案します。</span>
+          </p>
+          <div class="stats" aria-label="実績">
+            <div class="stat">
+              <strong>92%</strong>
+              <span>リピート率</span>
+            </div>
+            <div class="stat">
+              <strong>1.8k</strong>
+              <span>年間施術数</span>
+            </div>
+            <div class="stat">
+              <strong>4.8</strong>
+              <span>口コミ評価</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section price" id="price">
+      <div class="section__inner">
+        <p class="kicker">Price</p>
+        <h2 class="section-title"><span class="line">ネイルもまつげも、</span><br /><span class="line">通いやすいメニューで。</span></h2>
+        <span class="rule" aria-hidden="true"></span>
+        <div class="price-offer">
+          <div class="coupon">
+            <span class="script">Relax</span>
+            <p class="jp-copy"><span class="phrase">高い技術力と</span><span class="phrase">丁寧なカウンセリングで、</span><span class="phrase">理想のわたしをもっと身近に。</span></p>
+          </div>
+          <div class="offer-box">
+            <span class="ribbon">ご新規様限定</span>
+            <p><span class="no-break">ネイル or まつげメニュー</span></p>
+            <div class="discount" aria-label="10パーセントオフ">
+              <strong>10</strong><span>% OFF</span>
+            </div>
+            <span class="offer-note"><span class="no-break">高い技術力 ×</span> <span class="no-break">丁寧なカウンセリング</span></span>
+          </div>
+        </div>
+
+        <div class="menu-grid" aria-label="料金メニュー">
+          <article class="price-card">
+            <h3>Nail</h3>
+            <p class="jp-copy"><span class="phrase">肌なじみの良い</span><span class="phrase">上品デザイン。</span></p>
+            <dl>
+              <div><dt>ワンカラー</dt><dd>¥6,600</dd></div>
+              <div><dt>定額デザイン</dt><dd>¥8,800</dd></div>
+              <div><dt>持ち込み相談</dt><dd>¥9,900〜</dd></div>
+            </dl>
+          </article>
+          <article class="price-card">
+            <h3>Eyelash</h3>
+            <p class="jp-copy"><span class="phrase">自然で印象的な目元へ。</span></p>
+            <dl>
+              <div><dt>まつげパーマ</dt><dd>¥6,600</dd></div>
+              <div><dt>フラットラッシュ</dt><dd>¥7,700〜</dd></div>
+              <div><dt>アイブロウ</dt><dd>¥5,500</dd></div>
+            </dl>
+          </article>
+          <article class="price-card">
+            <h3>Set</h3>
+            <p class="jp-copy"><span class="phrase">同日施術で、</span><span class="phrase">さらに時短に。</span></p>
+            <dl>
+              <div><dt>ネイル＋まつげ</dt><dd>¥12,800〜</dd></div>
+              <div><dt>まつげ＋眉</dt><dd>¥10,800〜</dd></div>
+              <div><dt>ブライダル相談</dt><dd>¥16,500〜</dd></div>
+            </dl>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq" id="faq">
+      <div class="section__inner">
+        <p class="kicker">FAQ</p>
+        <h2 class="section-title"><span class="line">ご予約前に多いご質問。</span></h2>
+        <span class="rule" aria-hidden="true"></span>
+        <div class="faq-list">
+          <details>
+            <summary><span class="summary-text"><span class="phrase">ネイルとまつげを</span><span class="phrase">同じ日に施術できますか？</span></span></summary>
+            <p class="jp-copy"><span class="phrase">はい、空き状況により同日施術が可能です。</span><span class="phrase">ご希望のメニューと所要時間を確認し、</span><span class="phrase">無理のないスケジュールでご案内します。</span></p>
+          </details>
+          <details>
+            <summary><span class="summary-text"><span class="phrase">デザインが決まっていなくても</span><span class="phrase">予約できますか？</span></span></summary>
+            <p class="jp-copy"><span class="phrase">もちろんです。</span><span class="phrase">雰囲気やお好みの色、</span><span class="phrase">普段の服装に合わせて、</span><span class="phrase">似合うデザインをご提案します。</span></p>
+          </details>
+          <details>
+            <summary><span class="summary-text"><span class="phrase">初めてでも相談しながら</span><span class="phrase">進められますか？</span></span></summary>
+            <p class="jp-copy"><span class="phrase">施術前にカウンセリングの時間を設けています。</span><span class="phrase">爪やまつげの状態、</span><span class="phrase">仕上がりのイメージを確認してから進めます。</span></p>
+          </details>
+          <details>
+            <summary><span class="summary-text"><span class="phrase">予約の変更やキャンセルは</span><span class="phrase">できますか？</span></span></summary>
+            <p class="jp-copy"><span class="phrase">前日までにご連絡ください。</span><span class="phrase">当日の変更はメニュー内容により、</span><span class="phrase">対応が難しい場合がございます。</span></p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta" id="cta">
+      <div class="section__inner">
+        <p class="kicker">Create</p>
+        <h2 class="section-title"><span class="line">理想のわたしを、</span><br /><span class="line">もっと身近に。</span></h2>
+        <span class="rule" aria-hidden="true"></span>
+        <p class="section-copy jp-copy">
+          <span class="phrase">上質なネイルとまつげで、</span><span class="phrase">忙しい毎日にも自信を。</span><span class="phrase">まずはご希望日時とメニューを</span><span class="phrase">お知らせください。</span>
+        </p>
+        <div class="cta-actions">
+          <a class="btn" href="#price">メニューを見る</a>
+          <a class="btn btn--ghost" href="mailto:reserve@example.com">お問い合わせ</a>
+        </div>
+      </div>
+    </section>
+
+    <aside class="sticky-cta" aria-label="予約導線">
+      <div class="quick">簡単<strong>30</strong>秒</div>
+      <div class="sticky-cta__main">
+        <div class="sticky-cta__text">ご予約・お問い合わせはこちら</div>
+        <a class="btn" href="mailto:reserve@example.com">今すぐ予約する</a>
+      </div>
+    </aside>
+  </main>
+</body>
+</html>
